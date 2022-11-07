@@ -44,7 +44,7 @@ jobs:
       - run:
           name: Build docker container
           command: |
-            docker build --tag=helloudacity
+            docker build --tag=helloudacity .
             docker image ls
       - run:
           name: Upload Docker to Dockerhub
