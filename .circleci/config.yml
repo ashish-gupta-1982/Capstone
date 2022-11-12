@@ -98,7 +98,7 @@ jobs:
           name: Test load balancer
           command: |
             aws eks update-kubeconfig --name devops --region us-west-2
-            if curl -s http://a115bdbb1f1da47d39ae427c9749753b-187578367.us-west-2.elb.amazonaws.com/ | grep "Test Ashish"
+            if curl -s http://a990c6a29ef144b1b8cbee41eb13743f-1781005836.us-west-2.elb.amazonaws.com/ | grep "Test Ashish"
             then
               echo "Verified!"
             else
