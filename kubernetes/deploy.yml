@@ -10,10 +10,10 @@ spec:
   selector:
     matchLabels:
 app: hello-udacity-app
-  template:
+template:
     metadata:
       labels:
-app: hello-udacity--app
+        app: hello-udacity--app
     spec:
       affinity:
         nodeAffinity:
