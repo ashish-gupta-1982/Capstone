@@ -20,9 +20,9 @@ app: hello-udacity-app
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
               - matchExpressions:
-                key: kubernetes.io/arch
-          operator: In
-    values:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
                       - amd64
                       - arm64
       containers:
